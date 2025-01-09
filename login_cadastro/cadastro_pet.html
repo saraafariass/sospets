@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="fw-bold">Cadastre e ajude a encontrar um novo lar!</h1>
+        <br>
+        <form class="row">
+            <div class="col-12 col-md-8">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome completo</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome do pet">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label class="form-label">Espécie</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="especie" id="cachorro" value="cachorro">
+                        <label class="form-check-label" for="cachorro">Cachorro</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="especie" id="gato" value="gato">
+                        <label class="form-check-label" for="gato">Gato</label>
+                    </div>
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="raca" class="form-label">Raça</label>
+                    <input type="text" class="form-control" id="raca" placeholder="Digite a raça">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="idade" class="form-label">Idade</label>
+                    <input type="number" class="form-control" id="idade" placeholder="Digite a idade">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label class="form-label">Sexo</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="macho" value="macho">
+                        <label class="form-check-label" for="macho">Macho</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="femea" value="femea">
+                        <label class="form-check-label" for="femea">Fêmea</label>
+                    </div>
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label class="form-label">Tamanho</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tamanho" id="grande" value="grande">
+                        <label class="form-check-label" for="grande">Grande</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tamanho" id="medio" value="medio">
+                        <label class="form-check-label" for="medio">Médio</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tamanho" id="pequeno" value="pequeno">
+                        <label class="form-check-label" for="pequeno">Pequeno</label>
+                    </div>
+                </div>
+                <br>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-warning w-100 rounded-pill mb-4 fw-bold text-primary">Acessar</button>
+                </div>
+            </div>
+            <!-- Upload de Foto -->
+            <div class="col-12 col-md-4">
+                <div class="mb-3 text-center">
+                    <label class="form-label">Foto do pet</label>
+                    <div class="photo-upload" id="photo-preview">
+                        <span>+</span>
+                    </div>
+                    <input type="file" class="form-control mt-2" id="foto" accept="image/*" onchange="preVisualizacaoFoto(event)">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
