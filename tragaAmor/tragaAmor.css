@@ -1,0 +1,89 @@
+body{
+    background-color: #fdfdfd;
+    font-family: 'Arial', sans-serif;
+} 
+
+.navbar{
+    background: #FFDF99;
+    height: 100px;
+    
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    
+}
+
+
+.pesquisar{
+    position:absolute;
+    top: 55%;
+    left: 20%;
+    border-radius: 50px;
+    width: 800px;
+    height: 30px;
+
+}
+
+.butDiv{
+    position:absolute;
+    left: 435px;
+}
+
+.btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:bold;
+    font-size: medium;
+    color: #5C4036;
+    margin: 10px;
+
+    width: 200px;
+    height: 35px;
+    margin: 35Px;
+    border-radius: 50px;
+    background-color:#fcfcd0;
+    border-color:#5C4036;
+    border-width: 2px;
+    
+    cursor: pointer;
+    
+}
+
+.ulTxt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:bolder;
+    font-size: 20px;
+    color: #E07B39;
+    position:absolute;
+    left: 480px; 
+    top: 30%;   
+}
+
+
+.collapse{
+    background: #fdfdfd;
+    height: 100px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+    position:absolute;
+    top: 40%; 
+    left: 10%;  
+
+}
+
+.card{
+    max-width: 50;
+    max-height: 100;
+
+}
+
+.cardImg{
+    width: 1000;
+    top: 300;
+
+}
