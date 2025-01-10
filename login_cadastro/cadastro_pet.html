@@ -9,15 +9,16 @@
 </head>
 <body>
     <div class="container mt-4">
-        <h1 class="fw-bold">Cadastre e ajude a encontrar um novo lar!</h1>
+        <h1 class="fw-bold text-center">Cadastro de Pet</h1>
         <br>
         <form class="row">
+            <!-- Primeira coluna com informações do pet -->
             <div class="col-12 col-md-8">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome completo</label>
                     <input type="text" class="form-control" id="nome" placeholder="Digite o nome do pet">
                 </div>
-                <br>
+
                 <div class="mb-3">
                     <label class="form-label">Espécie</label>
                     <div class="form-check">
@@ -29,17 +30,17 @@
                         <label class="form-check-label" for="gato">Gato</label>
                     </div>
                 </div>
-                <br>
+
                 <div class="mb-3">
                     <label for="raca" class="form-label">Raça</label>
                     <input type="text" class="form-control" id="raca" placeholder="Digite a raça">
                 </div>
-                <br>
+
                 <div class="mb-3">
                     <label for="idade" class="form-label">Idade</label>
                     <input type="number" class="form-control" id="idade" placeholder="Digite a idade">
                 </div>
-                <br>
+
                 <div class="mb-3">
                     <label class="form-label">Sexo</label>
                     <div class="form-check">
@@ -51,7 +52,7 @@
                         <label class="form-check-label" for="femea">Fêmea</label>
                     </div>
                 </div>
-                <br>
+
                 <div class="mb-3">
                     <label class="form-label">Tamanho</label>
                     <div class="form-check">
@@ -67,12 +68,63 @@
                         <label class="form-check-label" for="pequeno">Pequeno</label>
                     </div>
                 </div>
-                <br>
+
+                <div class="mb-3">
+                    <label for="cor" class="form-label">Cor do pelo</label>
+                    <select id="cor" class="form-select">
+                        <option value="preto">Preto</option>
+                        <option value="branco">Branco</option>
+                        <option value="marrom">Marrom</option>
+                        <option value="amarelo">Amarelo</option>
+                        <option value="cinza">Cinza</option>
+                        <option value="creme">Creme</option>
+                        <option value="caramelo">Caramelo</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Castrado?</label>
+                    <div>
+                        <input type="radio" name="castrado" id="castradoSim" value="sim">
+                        <label for="castradoSim">Sim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="castrado" id="castradoNao" value="nao">
+                        <label for="castradoNao">Não</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="vacina" class="form-label">Vacinas?</label>
+                    <input type="text" class="form-control" id="vacina" placeholder="Digite as vacinas do pet">
+                </div>
+
+                <div class="mb-3">
+                    <label for="peso" class="form-label">Peso (kg)</label>
+                    <input type="number" class="form-control" id="peso" placeholder="Digite o peso do pet">
+                </div>
+
+                <div class="mb-3">
+                    <label for="estado" class="form-label">Estado</label>
+                    <select id="estado" class="form-select">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <!-- outras opções de estado -->
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade">
+                </div>
+
                 <div class="text-center">
-                    <button type="submit" class="btn btn-warning w-100 rounded-pill mb-4 fw-bold text-primary">Acessar</button>
+                    <button type="submit" class="btn btn-warning w-100 rounded-pill mb-4 fw-bold text-primary">Cadastrar</button>
                 </div>
             </div>
-            <!-- Upload de Foto -->
+
+            <!-- Segunda coluna com a foto do pet -->
             <div class="col-12 col-md-4">
                 <div class="mb-3 text-center">
                     <label class="form-label">Foto do pet</label>
@@ -82,7 +134,15 @@
                     <input type="file" class="form-control mt-2" id="foto" accept="image/*" onchange="preVisualizacaoFoto(event)">
                 </div>
             </div>
+
+
+            <div class="alert alert-success mt-4" id="formPet" style="display: none;">
+                Pet cadastrado com sucesso!
+            </div>
+        </div>
         </form>
+
+        
     </div>
 
     <script src="script.js"></script>
