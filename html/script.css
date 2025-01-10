@@ -49,9 +49,14 @@ img {
 }
 
 .logo {
-   width: 150px;
+   position: absolute; /* Torna a posição da logo absoluta */
+   top: 10px; /* Define a distância do topo */
+   right: 10px; /* Define a distância da borda direita */
+   width: 150px; /* Tamanho da logo */
    height: auto;
+   z-index: 10; /* Garante que a logo fique sobre outros elementos */
 }
+
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {
